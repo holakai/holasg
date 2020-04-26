@@ -1,73 +1,55 @@
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Hola Kai</title>
-		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu" rel="stylesheet">
-		<style>
-			* {
-				font-family: 'Open Sans', sans-serif;
-			}
-		</style>
-	</head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
 
-	<body>
-			<div id="main">
-			<div id="greetingContainer">
-				<div id="greeting">Hello/div>
-				<div id="name">My name is Kai</div>
-				<ul id="mainIcons">
-						</ul>
-			</div>
-					<div id="introduction">
-				<p>
-				Testing this out
-			
-					<div id="i38fwkgminlineContent-gridWrapper" data-mesh-internal="true"><div id="i38fwkgminlineContent-gridContainer" data-mesh-internal="true"><div data-packed="true" style="top:;bottom:;left:;right:;width:860px;height:auto;position:;pointer-events:none" class="txtNew" id="i378dnax_0"><h4 class="font_4" style="text-align:center;"><span style="letter-spacing:0.2em;">&iexcl;BIENVENIDO A SINGAPUR!</span></h4>
-</div><div data-packed="true" style="top:;bottom:;left:;right:;width:681px;height:auto;position:;pointer-events:none" class="txtNew" id="i378dnay"><p class="font_8" style="font-size:20px; line-height:1.5em; text-align:center;"><span style="font-size:20px;">¡Hola! Me llamo <span style="font-weight:bold;">Kai</span>. Vas a visitar Singapur? </span></p>
+<div class="w3-container">
+  <h2>Slideshow Indicators</h2>
+  <p>Using images to indicate how many slides there are in the slideshow, and highlight the image the user is currently viewing.</p>
+</div>
 
-<p class="font_8" style="font-size:20px; line-height:1.5em; text-align:center;"><span style="font-size:20px;">Quisieras participar en <span style="font-weight:bold;">un recorrido a pie por la ciudad en español</span>? &nbsp;</span></p>
+<div class="w3-content" style="max-width:1200px">
+  <img class="mySlides" src="img_nature_wide.jpg" style="width:100%;display:none">
+  <img class="mySlides" src="img_snow_wide.jpg" style="width:100%">
+  <img class="mySlides" src="img_mountains_wide.jpg" style="width:100%;display:none">
 
-<p class="font_8" style="font-size:20px; line-height:1.5em; text-align:center;"><span style="font-size:20px;">Por favor, contáctame! </span></p>
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="img_nature_wide.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="img_snow_wide.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+    </div>
+    <div class="w3-col s4">
+      <img class="demo w3-opacity w3-hover-opacity-off" src="img_mountains_wide.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+    </div>
+  </div>
+</div>
 
-<p class="font_8" style="font-size:20px; line-height:1.5em; text-align:center;">&nbsp;</p>
+<script>
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
 
-<p class="font_8" style="font-size:20px; line-height:1.5em; text-align:center;"><span style="font-style:normal;"><span style="font-size:20px;">ENVIAR UN CORREO ELECTRÓNICO A: </span></span></p>
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
 
-<p class="font_8" style="font-size:20px; line-height:1.5em; text-align:center;"><span style="font-style:normal;"><span style="text-decoration:underline;"><span style="font-size:20px;"><object height="0"><a class="auto-generated-link" data-auto-recognition="true" data-content="heykaihey@gmail.com" href="mailto:heykaihey@gmail.com" data-type="mail">heykaihey@gmail.com</a></object></span></span></span></p>
-
-<p class="font_8" style="font-size:20px; line-height:1.5em; text-align:center;"><span style="text-decoration:underline;"><span style="font-size:20px;"><span class="wixGuard">​</span></span></span></p>
-
-<p class="font_8" style="font-size:20px; line-height:1.5em; text-align:center;"><span style="font-style:normal;"><span style="font-size:20px;"><span style="font-weight:bold;">Quien? </span>Yo seré tu guía personal&nbsp;</span></span></p>
-
-<p class="font_8" style="font-size:20px; line-height:1.5em; text-align:center;"><br>
-<span style="font-style:normal;"><span style="font-size:20px;"><span style="font-weight:bold;">Donde?</span> La <span style="font-weight:bold;">ruta es flexible</span><br>
-<span style="font-weight:bold;">Lugares de interes:</span> Chinatown --&gt; Clarke Quay --&gt; Esplanade</span></span><br>
-<span style="font-size:20px;">(Opción para almorzar o cenar juntos disponible)&nbsp;</span></p>
-
-<p class="font_8" style="font-size:20px; line-height:1.5em; text-align:center;"><br>
-<span style="font-style:normal;"><span style="font-size:20px;"><span style="font-weight:bold;">Cuando?</span> Enviarme las fechas que estarás en Singapur </span></span></p>
-
-<p class="font_8" style="font-size:20px; line-height:1.5em; text-align:center;"><span style="font-style:normal;"><span style="font-size:20px;">y que día funciona mejor para ti</span></span><br>
-<span style="font-size:20px;">(Preferible<span style="font-weight:bold;"> días de semana </span>a partir de las <span style="font-weight:bold;">6.30pm</span>)</span></p>
-
-<p class="font_8" style="font-size:20px; line-height:1.5em; text-align:center;"><br>
-<span style="font-style:normal;"><span style="font-size:20px;"><span style="font-weight:bold;">Duración</span>: 2-3 horas, dependiendo de donde te gustaría ir</span></span></p>
-
-<p class="font_8" style="font-size:20px; line-height:1.5em; text-align:center;"><br>
-<span style="font-style:normal;"><span style="font-size:20px;"><span style="font-weight:bold;">Cuanto? </span>Es un walking tour gratis </span></span></p>
-
-<p class="font_8" style="font-size:20px; line-height:1.5em; text-align:center;"><span style="font-size:20px;">(sin embargo las propinas son bienvenidas! :) ).&nbsp;</span><br>
-<span style="font-size:16px;">*Cualquier gasto depende si quieres comprar comida/ souvenirs en el camino&nbsp;</span></p>
-</div><div id="i38szavp-rotated-wrapper" data-mesh-internal="true">
-					
-					
-			</div>
-					</div>
-	
-		<!-- scripts -->
-	
-		<script src="app.js"></script>
-		<script src="main.js"></script>
-
-	</body>
+</body>
 </html>
+
