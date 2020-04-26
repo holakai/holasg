@@ -1,202 +1,235 @@
 <!DOCTYPE html>
 <html>
-	
-  <div class="topnav">
-  <a class="active" href="#home">Intro</a>
-  <a href="https://holakai.github.io/holasg/historia.html" title="Mi Historia">MI HISTORIA</a>
-  <a href="https://holakai.github.io/holasg/galeria.html" title="Galeria">GALERIA</a>
-</div>
-
-
- 
-<title>Bienvenido a Singapur!</title>
-
+<head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<body>
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {
 
-<div class="w3-content" style="max-width:1200px" "max-height:400px">
-  <img class="mySlides" src="https://user-images.githubusercontent.com/64338620/80296744-2308e200-87b0-11ea-817a-c6c776784944.jpg" style="width:100%; display:none">
-  <img class="mySlides" src="https://user-images.githubusercontent.com/64338620/80296744-2308e200-87b0-11ea-817a-c6c776784944.jpg" style="width:100%">
-  <img class="mySlides" src="https://user-images.githubusercontent.com/64338620/80296744-2308e200-87b0-11ea-817a-c6c776784944.jpg" style="width:100%;display:none">
+vertical-align: middle;
+   width: 100%; 
+ height: 100%; 
+  object-fit: contain; 
 
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="https://user-images.githubusercontent.com/64338620/80296744-2308e200-87b0-11ea-817a-c6c776784944.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
-    </div>
-    <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="https://user-images.githubusercontent.com/64338620/80296744-2308e200-87b0-11ea-817a-c6c776784944.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
-    </div>
-    <div class="w3-col s4">
-      <img class="demo w3-opacity w3-hover-opacity-off" src="https://user-images.githubusercontent.com/64338620/80296744-2308e200-87b0-11ea-817a-c6c776784944.jpg" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
-    </div>
-  </div>
-</div>
-
-<div class="mainintro">
-
-	<h1> ¡BIENVENIDO A SINGAPUR! </h1>
-
-<p>
-¡Hola! Me llamo Kai. Vas a visitar Singapur?<br />
-
-Quisieras participar en un recorrido a pie por la ciudad en español?  <br />
-
-Por favor, contáctame!<br /><br />
-
- 
-
-ENVIAR UN CORREO ELECTRÓNICO A:<br />
-
-heykaihey@gmail.com<br /><br />
-
-<span class="inheader"> ¿Quien?</span> Yo seré tu guía personal <br />
-
-
-<span class="inheader">¿Donde?</span> La ruta es flexible<br />
-<span class="inheader">Lugares de interes:</span> Chinatown --> Clarke Quay --> Esplanade<br />
-(Opción para almorzar o cenar juntos disponible) <br /><br />
-
-
-<span class="inheader">¿Cuando?</span> Enviarme las fechas que estarás en Singapur y que día funciona mejor para ti<br />
-(Preferible días de semana a partir de las 6.30pm)<br /><br />
-
-
-<span class="inheader">Duración:</span> 2-3 horas, dependiendo de donde te gustaría ir<br /><br />
-
-
-<span class="inheader">¿Cuanto?</span> Es un walking tour gratis<br />
-(sin embargo las propinas son bienvenidas! :) ). <br />
-*Cualquier gasto depende si quieres comprar comida/ souvenirs en el camino <br /><br />
-</p>
-
-</div>
-
-<div class="body2">
-
-	<h1 class=header2> Testimonials </h1>
-    
-
-
-</div>
-	
-	    <iframe width="560" height="315" src="https://www.youtube.com/embed/azfKhDMIrZo? playlist=azfKhDMIrZo=1"></iframe>
-
-
-<div id="videoal">
-    <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/azfKhDMIrZo? playlist=azfKhDMIrZo=1"></iframe>
-    </div>
-    <div class="video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/azfKhDMIrZo? playlist=azfKhDMIrZo=1"></iframe>
-    </div>
-</div>
-
-	
- 
-<script>
-  
-function currentDiv(n) {
-  showDivs(slideIndex = n);
 }
 
-function showDivs(n) {
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="https://user-images.githubusercontent.com/64338620/80303301-f66dbe00-87e1-11ea-91c4-16c1a2173a29.JPG" style="width:100%">
+  <div class="text">Marina Bay Sands</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="https://user-images.githubusercontent.com/64338620/80303354-76942380-87e2-11ea-9be1-5b1317b5d94e.JPG" style="width:100%">
+  <div class="text">Flores</div>
+</div>
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
   var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
   }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+    dots[i].className = dots[i].className.replace(" active", "");
   }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-opacity-off";
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 </script>
 
 </body>
 </html>
 
- <style>
- 
-.title{
-  font-weight: bold;
-  font-family: Calibri
 
+<!DOCTYPE html>
+<html>
+
+<link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+
+
+<head>
+<style>
+
+div.gallery {
+     background: #fff;
+     padding: 2px;
+     -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+      -moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+      box-shadow: 0 4px 6px rgba(0,0,0,.3);
 }
 
-#videoal div.video {
-    display: inline-block;
-    *display: inline;
-    width: 200px;
-    height: 200px;
-    margin: 0 10px 10px 0;
+
+
+div.gallery iframe {
+  width: 100%;
+  height: auto;
+  padding: 5px;
 }
 
-#videoal div.video {
-    width: 100%;
-    height: 100%;
-}
-
-.mainintro{
-  padding-top: 40px;
-  padding-right: 30px;
-  padding-bottom: 40px;
-  padding-left: 30px;
+div.desc {
+  padding: 6px;
+  text-align: center;
+  font-family: 'Gloria Hallelujah', cursive;
+  line-height: 20px;  
   
-  text-align: center;
-  font-size: large;
-  background-color: #eee2dc;
-  font-family: Calibri
-
 }
 
-.inheader{
-  font-weight: bold;
-  font-family: Calibri
+/*
+.desc{
+  font-family: 'Noto Sans';
+}
+*/
 
-}
- 
- 
-h1.header2{
-  text-align: center;
-}
- 
- /* Add a black background color to the top navigation */
-.topnav {
-  background-color: #333;
-  overflow: hidden;
+* {
+  box-sizing: border-box;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
+.responsive {
+  overflow:hidden;
+  padding: 0 6px;
   float: left;
-  color: #f2f2f2;
+  width: 50%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    overflow:hidden;
+    width: 50%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    overflow:hidden;
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.top{
+  font-family: 'Noto Sans';
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
 
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-  
- </style>
- 
- 
-  
-  
- 
+
+</style>
+</head>
+<body>
+
+<h2 class="top">TESTIMONIALS</h2>
+
+<div class="responsive">
+  <div class="gallery">
+       <iframe width="500" height="600" src="https://www.youtube.com/embed/rodchOo9YgE" frameborder="0" allowfullscreen></iframe>
+    <div class="desc">-Greg, de Italia</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+       <iframe width="500" height="600" src="https://www.youtube.com/embed/7pLw7WIv3jA" frameborder="0" allowfullscreen></iframe>
+    <div class="desc">-Daniel, de Colombia</div>
+  </div>
+</div>
+
+
+<div class="clearfix"></div>
+
+
+</body>
+</html>
 
