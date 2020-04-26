@@ -1,17 +1,140 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html>
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="historia.html">Mi historía</a></li>
-          <li><a href="galery.html">Galería</a></li>
-            </ul>
-      </nav>
-    </header>
-    <h1>Home</h1>
 
-  </body>
+<link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+
+
+<head>
+<style>
+
+
+
+div.gallery {
+     background: #fff;
+     padding: 2px;
+     -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+      -moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+      box-shadow: 0 4px 6px rgba(0,0,0,.3);
+}
+
+/*
+div.gallery:hover {
+  border: 1px solid #777;
+}
+*/
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+}
+
+div.desc {
+  padding: 6px;
+  text-align: center;
+  font-family: 'Gloria Hallelujah', cursive;
+  line-height: 20px;  
+  
+}
+
+/*
+.desc{
+  font-family: 'Noto Sans';
+}
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+.gallery {
+  padding: 0 20px;
+  float: left;
+  width: 30%;
+  font-family: 'Noto Sans';
+}
+
+.main {
+  padding: 0 30px;
+  float: left;
+  width: 70%;
+  font-family: 'Noto Sans';
+}
+
+.endline {
+  text-align: left;
+  font-family: 'Gloria Hallelujah', cursive;
+  line-height: 20px;  
+  
+}
+
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 50%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.top{
+  font-family: 'Noto Sans';
+}
+
+
+
+</style>
+</head>
+<body>
+
+<h2 class="top"></br></h2>
+
+<div class="responsive">
+  <div class="gallery">
+        <img src="https://user-images.githubusercontent.com/64338620/80310911-8d04a400-880f-11ea-9d6d-e06f3d146186.JPG" alt="" width="600" height="400">
+    <div class="desc">La vista de Singapur de un lugar secreto ;)</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="main">
+    <h2>MI HISTORIA</h2>
+    <p>¡Hola! Me llamo Kai. Nací y crecí en Singapur y me gradué de la Universidad Nacional de Singpaur (NUS) en 2015. Fue en NUS donde estudié español durante mi último año en la universidad, por dos semestres. Después de graduarme, siempre he estado tratando de encontrar oportunidades para seguir practicando mi español.</br></br>
+
+ 
+
+Me di cuenta que la oportunidad perfecta es para organizar "walking tours" para hispanohablantes! Durante nuestro tur, voy a compartir las historias de Singapur y estos lugares contigo!</br></br>
+
+ ¿Estas listo? ¡Vamos a explorar! </br>
+
+
+<p class="endline">-Kai</p>
+
+
+</p>
+
+
+</div>
+</div>
+
+
+
+
+<div class="clearfix"></div>
+
+
+</body>
 </html>
