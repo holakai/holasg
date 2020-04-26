@@ -1,24 +1,48 @@
 <!DOCTYPE html>
 <html>
+
+<link href='https://fonts.googleapis.com/css?family=Noto Sans' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+
+
 <head>
 <style>
+
+
+
 div.gallery {
-  border: 1px solid #ccc;
+     background: #fff;
+     padding: 2px;
+     -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+      -moz-box-shadow: 0 4px 6px rgba(0,0,0,.3);
+      box-shadow: 0 4px 6px rgba(0,0,0,.3);
 }
 
+/*
 div.gallery:hover {
   border: 1px solid #777;
 }
+*/
 
 div.gallery img {
   width: 100%;
   height: auto;
+  padding: 5px;
 }
 
 div.desc {
-  padding: 15px;
+  padding: 6px;
   text-align: center;
+  font-family: 'Gloria Hallelujah', cursive;
+  line-height: 20px;  
+  
 }
+
+/*
+.desc{
+  font-family: 'Noto Sans';
+}
+*/
 
 * {
   box-sizing: border-box;
@@ -48,80 +72,63 @@ div.desc {
   display: table;
   clear: both;
 }
+
+
+.top{
+  font-family: 'Noto Sans';
+}
+
+
+
 </style>
 </head>
 <body>
 
-<h2>Fotos con mis amigos!</h2>
+<h2 class="top">Fotos con mis amigos!</h2>
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="https://user-images.githubusercontent.com/64338620/80296744-2308e200-87b0-11ea-817a-c6c776784944.jpg">
-      <img src="https://user-images.githubusercontent.com/64338620/80296744-2308e200-87b0-11ea-817a-c6c776784944.jpg" alt="Cinque Terre" width="600" height="400">
-    </a>
-    <div class="desc">Marina Bay Sands</div>
+        <img src="https://user-images.githubusercontent.com/64338620/80310854-634b7d00-880f-11ea-89e3-fbfde792f37e.JPG" alt="" width="600" height="400">
+    <div class="desc">Cuando manejamos la bicicleta de Chinatown hasta East Coast Park, disfrutando la puesta de sol</div>
   </div>
 </div>
 
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="https://user-images.githubusercontent.com/64338620/80302312-dcc97800-87db-11ea-998c-4db2f2357030.JPG">
-      <img src="https://user-images.githubusercontent.com/64338620/80302312-dcc97800-87db-11ea-998c-4db2f2357030.JPG" alt="Forest" width="600" height="400">
+        <img src="https://user-images.githubusercontent.com/64338620/80302312-dcc97800-87db-11ea-998c-4db2f2357030.JPG" alt="" width="600" height="400">
     </a>
-    <div class="desc">Chinatown en Singapur</div>
+    <div class="desc">Chinatown de noche</div>
   </div>
 </div>
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="https://user-images.githubusercontent.com/64338620/80296744-2308e200-87b0-11ea-817a-c6c776784944.jpg">
-      <img src="https://user-images.githubusercontent.com/64338620/80296744-2308e200-87b0-11ea-817a-c6c776784944.jpg" alt="Northern Lights" width="600" height="400">
+        <img src="https://user-images.githubusercontent.com/64338620/80310896-7cecc480-880f-11ea-821d-6b1c8d98151c.jpg" alt="" width="600" height="400">
     </a>
-    <div class="desc">Tomando el bús público</div>
+    <div class="desc">Tomando el bus público juntos!</div>
   </div>
 </div>
 
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="https://user-images.githubusercontent.com/64338620/80296744-2308e200-87b0-11ea-817a-c6c776784944.jpg">
-      <img src="https://user-images.githubusercontent.com/64338620/80296744-2308e200-87b0-11ea-817a-c6c776784944.jpg" alt="Cinque Terre" width="600" height="400">
+        <img src="https://user-images.githubusercontent.com/64338620/80302312-dcc97800-87db-11ea-998c-4db2f2357030.JPG" alt="" width="600" height="400">
     </a>
-    <div class="desc">Marina Bay Sands</div>
+    <div class="desc"></div>
   </div>
 </div>
-
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="https://user-images.githubusercontent.com/64338620/80302312-dcc97800-87db-11ea-998c-4db2f2357030.JPG">
-      <img src="https://user-images.githubusercontent.com/64338620/80302312-dcc97800-87db-11ea-998c-4db2f2357030.JPG" alt="Forest" width="600" height="400">
-    </a>
-    <div class="desc">Chinatown en Singapur</div>
-  </div>
-</div>
-
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="https://user-images.githubusercontent.com/64338620/80296744-2308e200-87b0-11ea-817a-c6c776784944.jpg">
-      <img src="https://user-images.githubusercontent.com/64338620/80296744-2308e200-87b0-11ea-817a-c6c776784944.jpg" alt="Northern Lights" width="600" height="400">
-    </a>
-    <div class="desc">Tomando el bús público</div>
-  </div>
-</div>
-
-
 
 <!--
+
 <div class="responsive">
   <div class="gallery">
-    <a target="_blank" href="ihttps://user-images.githubusercontent.com/64338620/80296744-2308e200-87b0-11ea-817a-c6c776784944.jpg">
-      <img src="https://user-images.githubusercontent.com/64338620/80296744-2308e200-87b0-11ea-817a-c6c776784944.jpg" alt="Mountains" width="600" height="400">
+        <img src="https://user-images.githubusercontent.com/64338620/80302312-dcc97800-87db-11ea-998c-4db2f2357030.JPG" alt="" width="600" height="400">
     </a>
-    <div class="desc">Add a description of the image here</div>
+    <div class="desc"></div>
   </div>
 </div>
 -->
+
 
 
 <div class="clearfix"></div>
