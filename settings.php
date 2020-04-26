@@ -2,8 +2,8 @@
 
 /* Settings
 ---------------------*/
-$email_to = 'john@hastify.com'; // Email addresses to send data. Seperate email addresses with ','
-$site_title = 'Yoongfook'; // Your website title
+$email_to = 'heykaihey@gmail.com'; // Email addresses to send data. Seperate email addresses with ','
+$site_title = 'ConoceSingapur'; // Your website title
 $webmaster_name = "John Kueh"; // Your name
 
 $headerbar_color = "#313131"; // Color of the headerbar in the email sent
