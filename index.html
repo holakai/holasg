@@ -51,37 +51,100 @@ ENVIAR UN CORREO ELECTRÓNICO A:<br />
 
 heykaihey@gmail.com<br /><br />
 
-<span class="inheader"> Quien?</span> Yo seré tu guía personal <br />
+<span class="inheader"> ¿Quien?</span> Yo seré tu guía personal <br />
 
 
-<span class="inheader">Donde?</span> La ruta es flexible<br />
+<span class="inheader">¿Donde?</span> La ruta es flexible<br />
 <span class="inheader">Lugares de interes:</span> Chinatown --> Clarke Quay --> Esplanade<br />
 (Opción para almorzar o cenar juntos disponible) <br /><br />
 
 
-<span class="inheader">Cuando?</span> Enviarme las fechas que estarás en Singapur y que día funciona mejor para ti<br />
+<span class="inheader">¿Cuando?</span> Enviarme las fechas que estarás en Singapur y que día funciona mejor para ti<br />
 (Preferible días de semana a partir de las 6.30pm)<br /><br />
 
 
 <span class="inheader">Duración:</span> 2-3 horas, dependiendo de donde te gustaría ir<br /><br />
 
 
-<span class="inheader">Cuanto?</span> Es un walking tour gratis<br />
+<span class="inheader">¿Cuanto?</span> Es un walking tour gratis<br />
 (sin embargo las propinas son bienvenidas! :) ). <br />
 *Cualquier gasto depende si quieres comprar comida/ souvenirs en el camino <br /><br />
 </p>
 
 </div>
 
-<div class="testimonials">
+<div class="body2">
 
-	<h1> Testimonials </h1>
-<iframe width="420" height="315"
-src="https://www.youtube.com/embed/azfKhDMIrZo">
-</iframe>
+	<h1 class=header2> Testimonials </h1>
     
+
+
 </div>
 
+<div id="videoal">
+    <div class="video">
+        <video controls>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/azfKhDMIrZo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </video>
+    </div>
+    <div class="video">
+       <video controls>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/azfKhDMIrZo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       </video>
+    </div>
+</div>
+
+
+<form method="post" action="subscriberform.php">
+
+<textarea name="message"></textarea>
+
+<input type="submit">
+
+</form>
+
+<h3>
+<?php
+
+if($_POST["message"]) {
+
+mail("heykaihey@gmail.com", "Here is the subject line",
+
+$_POST["insert your message here"]. "From: an@email.address");
+
+}
+
+?>
+</h3>
+
+
+
+ 
+<script>
+  
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
+</body>
+</html>
 
  <style>
  
@@ -89,6 +152,19 @@ src="https://www.youtube.com/embed/azfKhDMIrZo">
   font-weight: bold;
   font-family: Calibri
 
+}
+
+#videoal div.video {
+    display: inline-block;
+    *display: inline;
+    width: 200px;
+    height: 200px;
+    margin: 0 10px 10px 0;
+}
+
+#videoal div.video video {
+    width: 100%;
+    height: 100%;
 }
 
 .mainintro{
@@ -110,6 +186,10 @@ src="https://www.youtube.com/embed/azfKhDMIrZo">
 
 }
  
+ 
+h1.header2{
+  text-align: center;
+}
  
  /* Add a black background color to the top navigation */
 .topnav {
@@ -145,32 +225,4 @@ src="https://www.youtube.com/embed/azfKhDMIrZo">
   
   
  
- 
-<script>
- 
- 
- 
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
-  }
-  x[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " w3-opacity-off";
-}
-</script>
-
-</body>
-</html>
 
