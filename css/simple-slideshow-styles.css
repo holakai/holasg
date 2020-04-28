@@ -10,20 +10,10 @@ figcaption {
  outline: 0;
 }
 .bss-slides figure{
-   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-}
-
-
-/* Messing with this
-.bss-slides figure{
   position: absolute;
   top: 0;
   width: 100%;
 }
-*/
 .bss-slides figure:first-child{
   position: relative;
 }
@@ -45,19 +35,18 @@ figcaption {
 }
 
 .bss-slides figcaption{
-
-position: absolute;
-font-family: sans-serif;
-font-size: 3rem;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-padding: .25em;
-color: #fff;
-opacity: 0;
--webkit-transition: opacity 1.2s;
-transition: opacity 1.2s;
-
+  position: absolute;
+  font-family: sans-serif;
+  font-size: 3em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: .25em;
+  color: #000;
+  padding: .25em;
+  opacity: 0;
+  -webkit-transition: opacity 1.2s;
+  transition: opacity 1.2s;
 }
 .bss-slides .bss-show figcaption{
   z-index: 3;
