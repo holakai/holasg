@@ -1,8 +1,5 @@
 .bss-slides{
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
   display: block; 
   line-height: 0;/*removes the gap if you put a border on the slideshow div*/   
 }
@@ -13,18 +10,12 @@ figcaption {
  outline: 0;
 }
 .bss-slides figure{
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  
+  position: relative;
+  top: 0;
   width: 60%;
 }
 .bss-slides figure:first-child{
-    position: relative;
-    top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
 }
 .bss-slides figure img{
   opacity: 0;
