@@ -12,7 +12,7 @@ figcaption {
 .bss-slides figure{
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 60%;
 }
 .bss-slides figure:first-child{
   position: relative;
@@ -44,7 +44,7 @@ figcaption {
   text-align: center;
   text-transform: uppercase; 
   padding: .25em;
-  color: #000;
+  color: #fff;
   
   opacity: 0;
   -webkit-transition: opacity 1.2s;
