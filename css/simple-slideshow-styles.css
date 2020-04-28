@@ -10,10 +10,20 @@ figcaption {
  outline: 0;
 }
 .bss-slides figure{
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+
+/* Messing with this
+.bss-slides figure{
   position: absolute;
   top: 0;
   width: 100%;
 }
+*/
 .bss-slides figure:first-child{
   position: relative;
 }
