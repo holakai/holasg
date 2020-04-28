@@ -43,10 +43,11 @@ font-size: 3em;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: .25em;
-  color: #000;
+  color: #fff;
   opacity: 0;
   -webkit-transition: opacity 1.2s;
   transition: opacity 1.2s;
+  text-transform: uppercase;
 }
 .bss-slides .bss-show figcaption{
   z-index: 3;
