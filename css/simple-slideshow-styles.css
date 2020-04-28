@@ -38,7 +38,7 @@ figcaption {
 
 position: absolute;
 font-family: sans-serif;
-font-size: .8em;
+font-size: 3rem;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
