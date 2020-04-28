@@ -36,14 +36,16 @@ figcaption {
 
 .bss-slides figcaption{
   position: absolute;
-  font-family: sans-serif;
-  font-size: 3em;
+  font-family: Noto Sans;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase; 
   padding: .25em;
   color: #000;
-  padding: .25em;
+  
   opacity: 0;
   -webkit-transition: opacity 1.2s;
   transition: opacity 1.2s;
