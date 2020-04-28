@@ -48,6 +48,7 @@ font-size: 3em;
   -webkit-transition: opacity 1.2s;
   transition: opacity 1.2s;
   text-transform: uppercase;
+  text-align: center;
 }
 .bss-slides .bss-show figcaption{
   z-index: 3;
