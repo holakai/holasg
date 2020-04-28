@@ -1,5 +1,5 @@
 .bss-slides{
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -13,7 +13,7 @@ figcaption {
  outline: 0;
 }
 .bss-slides figure{
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -22,6 +22,9 @@ figcaption {
 }
 .bss-slides figure:first-child{
   position: relative;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .bss-slides figure img{
   opacity: 0;
