@@ -1,5 +1,5 @@
 .bss-slides{
-  position: absolute;
+  position: relative;
   display: block; 
   line-height: 0;/*removes the gap if you put a border on the slideshow div*/   
 }
@@ -10,12 +10,12 @@ figcaption {
  outline: 0;
 }
 .bss-slides figure{
-  position: absolute;
+  position: relative;
   top: 0;
   width: 60%;
 }
 .bss-slides figure:first-child{
-  position: absolute;
+  position: relative;
 }
 .bss-slides figure img{
   opacity: 0;
