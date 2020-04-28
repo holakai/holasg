@@ -35,7 +35,7 @@
 var opts = {
     auto : {
         speed : 3000, 
-        pauseOnHover : true
+        pauseOnHover : false
     },
     fullScreen : false, 
     swipe : true
@@ -43,7 +43,10 @@ var opts = {
 makeBSS('.num1', opts);
 
 var opts2 = {
-    auto : false,
+    auto : {
+        speed : 2000, 
+        pauseOnHover : false
+    },
     fullScreen : true,
     swipe : true
 };
