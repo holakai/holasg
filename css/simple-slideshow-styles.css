@@ -16,14 +16,6 @@ figcaption {
 }
 
 
-/* Messing with this
-.bss-slides figure{
-  position: absolute;
-  top: 0;
-  width: 100%;
-Won't do anything
-}
-*/
 .bss-slides figure:first-child{
   position: relative;
 }
