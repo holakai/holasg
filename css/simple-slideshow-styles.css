@@ -10,9 +10,9 @@ figcaption {
  outline: 0;
 }
 .bss-slides figure{
-  position: relative;
+  position: absolute;
   top: 0;
-  width: 60%;
+  width: 100%;
 }
 .bss-slides figure:first-child{
   position: relative;
@@ -36,16 +36,14 @@ figcaption {
 
 .bss-slides figcaption{
   position: absolute;
-  font-family: Noto Sans;
+  font-family: sans-serif;
+  font-size: 3em;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3rem;
-  text-align: center;
-  text-transform: uppercase; 
   padding: .25em;
-  color: #fff;
-  
+  color: #000;
+  padding: .25em;
   opacity: 0;
   -webkit-transition: opacity 1.2s;
   transition: opacity 1.2s;
@@ -59,7 +57,7 @@ figcaption {
 }
 .bss-next, .bss-prev{
   color: #fff;
-  position: relative;
+  position: absolute;
   background: #000;
   background: rgba(0,0,0, .6);
   top: 50%;
